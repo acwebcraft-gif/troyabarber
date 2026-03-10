@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Troyanos Barber | Barbería en Plaza Bambú</title>
+
+<meta name="description" content="Troyanos Barber ofrece servicios de cabello, tintes, keratinas, manicure y pedicure en Plaza Comercial Bambú. Reserva tu cita por WhatsApp.">
+
+<meta name="keywords" content="barbería, salón de belleza, uñas, tintes, keratina, Costa Rica">
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2 class="nav-logo">Troyanos Barber</h2>
+
+<ul>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#horarios">Horarios</a></li>
+<li><a href="#direccion">Dirección</a></li>
+</ul>
+
+</nav>
+
+
+<header class="hero">
+
+<img src="logo.jpg" alt="logo" width="300" height="300">
+
+<h1>TROYANOS BARBER</h1>
+
+<p class="subtitle">Estilo • Precisión • Elegancia</p>
+
+<a class="whatsapp-btn"
+href="https://wa.me/50689487539?text=Hola%20quiero%20agendar%20una%20cita"
+target="_blank">
+
+Reservar por WhatsApp
+
+</a>
+
+</header>
+
+
+<section id="servicios" class="services">
+
+<h2>Servicios</h2>
+
+<div class="service-card reveal">
+
+<h3>Barbería</h3>
+
+<p>
+Corte clásico,Fade / degradado,afeitado con navaja,
+perfilado de barba,Corte + barba
+</p>
+
+</div>
+
+<div class="service-card reveal">
+
+<h3>Cabello para Dama</h3>
+
+<p>
+Tintes, técnicas de color, lisos orgánicos,
+keratinas, tratamientos, blower,
+peinados para ocasiones especiales.
+</p>
+
+</div>
+
+<div class="service-card reveal">
+
+<h3>Uñas</h3>
+
+<p>
+Pedicure, manicure,
+esmaltados y Gel X.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="galeria" class="gallery">
+
+<h2>Trabajos</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1657105052497-f996284ffff8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvcnRlJTIwZGUlMjBwZWxvfGVufDB8fDB8fHww">
+<img src="https://images.unsplash.com/photo-1568339434343-2a640a1a9946?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvcnRlJTIwZGUlMjBwZWxvfGVufDB8fDB8fHww">
+<img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1">
+
+</div>
+
+</section>
+
+
+<section id="horarios" class="info">
+
+<h3>Horarios</h3>
+
+<p>Martes a Viernes: 10AM – 7PM</p>
+<p>Sábados: 9AM – 7PM</p>
+
+</section>
+
+
+<section id="direccion" class="info">
+
+<h3>Dirección</h3>
+
+<p>Plaza Comercial Bambú 106</p>
+<p>Local 2</p>
+
+</section>
+
+
+<section class="reviews">
+
+<h2>Opiniones</h2>
+
+<div class="review-card">
+
+⭐️⭐️⭐️⭐️  
+<p>Excelente servicio y atención.</p>
+
+</div>
+
+<div class="review-card">
+
+⭐️⭐️⭐️⭐️⭐️  
+<p>Muy profesionales, recomendado.</p>
+
+</div>
+
+</section>
+
+
+<section class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=Troyanos%20Barber%20Lagunilla%20Heredia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0">
+</iframe>
+
+</section>
+
+
+<footer>
+
+<p>📞 8948-7539 | 2102-0740</p>
+
+<p>Troyanos Barber © 2026</p>
+
+</footer>
+
+
+<a href="https://wa.me/50689487539?text=Hola,%20quiero%20agendar%20una%20cita"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
+</a>
+
+
+<script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+reveals.forEach((card) => {
+
+const windowHeight = window.innerHeight;
+
+const elementTop = card.getBoundingClientRect().top;
+
+const visible = 100;
+
+if(elementTop < windowHeight - visible){
+
+card.classList.add("show");
+
+}
+
+});
+
+});
+
+</script>
+
+
+</body>
+</html>
